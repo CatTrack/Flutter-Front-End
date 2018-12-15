@@ -1,0 +1,99 @@
+{
+    "documents": [
+        {
+        "name": "projects/te-cattrack/databases/(default)/documents/users/wxOMf0ORojPklj04diYXNayMAK42/Cats/Zm024m93b9LMxH8UhFGe",
+        "fields": {
+            "Identifier": {
+                "stringValue": "Julian"
+            },
+            "Photo URI": {
+                "stringValue": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/1200px-Cat03.jpg"
+            },
+            "Location": {
+                "mapValue": {
+                    "fields": {
+                        "Specific Location": {
+                            "arrayValue": {
+                                "values": [{
+                                    "mapValue": {
+                                        "fields": {
+                                            "Specific Location": {
+                                                "mapValue": {
+                                                    "fields": {
+                                                        "Location Identifier": {
+                                                            "stringValue": "Cat Bowl"
+                                                        },
+                                                        "Timestamps": {
+                                                            "arrayValue": {
+                                                                "values": [{
+                                                                    "timestampValue": "2018-08-29T23:54:19.807Z"
+                                                                }]
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }]
+                            }
+                        },
+                        "General Location": {
+                            "stringValue": "Inside"
+                        }
+                    }
+                }
+            }
+        },
+        "createTime": "2018-08-24T09:39:29.714720Z",
+        "updateTime": "2018-08-30T12:58:15.523489Z"
+    }, 
+    {
+        "name": "projects/te-cattrack/databases/(default)/documents/users/wxOMf0ORojPklj04diYXNayMAK42/Cats/oKaBrYzMTYT3LG0mpWHz",
+        "fields": {
+            "Location": {
+                "mapValue": {
+                    "fields": {
+                        "Specific Location": {
+                            "arrayValue": {
+                                "values": [{
+                                    "mapValue": {
+                                        "fields": {
+                                            "Specific Location": {
+                                                "mapValue": {
+                                                    "fields": {
+                                                        "Timestamps": {
+                                                            "arrayValue": {
+                                                                "values": [{
+                                                                    "timestampValue": "2018-08-29T19:48:04.923Z"
+                                                                }]
+                                                            }
+                                                        },
+                                                        "Location Identifier": {
+                                                            "stringValue": ""
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }]
+                            }
+                        },
+                        "General Location": {
+                            "stringValue": ""
+                        }
+                    }
+                }
+            },
+            "Identifier": {
+                "stringValue": "Julia"
+            },
+            "Photo URI": {
+                "stringValue": "https://www.google.co.uk/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwi12e7dg5PdAhUiz4UKHcy4Ax8QjRx6BAgBEAU&url=https%3A%2F%2Fanimals.howstuffworks.com%2Fpets%2Fteslas-cat-and-other-feline-fascinations.htm&psig=AOvVaw0IqVuvdajD8OWJHOvGRAuO&ust=1535658448322528"
+            }
+        },
+        "createTime": "2018-08-29T19:48:07.385127Z",
+        "updateTime": "2018-08-29T19:48:07.385127Z"
+    }]
+}

@@ -1,0 +1,138 @@
+{
+  "project_info": {
+    "project_number": "251260740064",
+    "firebase_url": "https://te-cattrack.firebaseio.com",
+    "project_id": "te-cattrack",
+    "storage_bucket": "te-cattrack.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:251260740064:android:230034ad1c97794f",
+        "android_client_info": {
+          "package_name": "com.example.ben.cattrack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "251260740064-s4mm20ul5cnj3krkkcu7hvq882efepfg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ben.cattrack",
+            "certificate_hash": "9f875ebed7225059f8aba48ea8ec022bf494f48b"
+          }
+        },
+        {
+          "client_id": "251260740064-1efuc09oo69cjvcpo8o58595levuosnj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACPHnRXpj4jOykefFYGgDqiRS9a-nyXXA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "251260740064-1efuc09oo69cjvcpo8o58595levuosnj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:251260740064:android:77faa0ab8429d77c",
+        "android_client_info": {
+          "package_name": "com.example.oliverbeardsall.loginscreen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "251260740064-6jsvmg3h042d8v6jig0tufjd0j9qec79.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.oliverbeardsall.loginscreen",
+            "certificate_hash": "fd44f05f11ef1cf069e1adb910b148147ccaa161"
+          }
+        },
+        {
+          "client_id": "251260740064-h2ib6e1ntel21rih9nafi1o6a437vk0o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.oliverbeardsall.loginscreen",
+            "certificate_hash": "76e2ab1cb31cfe522a0f29d28f8dbd28f1b69469"
+          }
+        },
+        {
+          "client_id": "251260740064-1efuc09oo69cjvcpo8o58595levuosnj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACPHnRXpj4jOykefFYGgDqiRS9a-nyXXA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "251260740064-1efuc09oo69cjvcpo8o58595levuosnj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:251260740064:android:0e5aa946b5fea051",
+        "android_client_info": {
+          "package_name": "com.thinkengineer.utc.cattrack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "251260740064-1efuc09oo69cjvcpo8o58595levuosnj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACPHnRXpj4jOykefFYGgDqiRS9a-nyXXA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
