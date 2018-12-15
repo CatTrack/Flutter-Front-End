@@ -94,13 +94,12 @@ class DetailScreen extends StatelessWidget{
                   )
                 )
               )
-            ), 
             Container( 
               padding: EdgeInsets.fromLTRB(16.0, 16.0, 0, 0), 
               child:Column( 
                 children: <Widget>[ 
                   Text(pet[index]["fields"]["Identifier"]["stringValue"], ),
-                  Text(pet[index]["fields"]["Location"][])
+                  Text(pet[index]["fields"]["Location"]["mapValue"]["fields"]["General Location"]["stringValue"])
                 ]
               )
             )
