@@ -56,12 +56,13 @@ class _PetListState extends State<PetList>{
       itemBuilder: (context, int index) {
         print(data[index]);
         return ListTile(
+          leading: Container(width: 50, height: 50, decoration: BoxDecoration(shape: BoxShape.circle, image: DecorationImage(fit: BoxFit.cover, image: NetworkImage(data[index]["fields"]["Photo URI"]["stringValue"])))),
           title: Text(data[index]["fields"]["Identifier"]["stringValue"]),
           subtitle: Text(data[index]["fields"]["Location"]["mapValue"]["fields"]["General Location"]["stringValue"], style: TextStyle(color: Colors.grey)),
           onTap: (){
             Navigator.push(context, 
             MaterialPageRoute(
-              builder: (context) => DetailScreen(petName: data[index]["fields"]["Identifier"]["stringValue"])
+              builder: (context) => DetailScreen(pet: data, index: index,)
             ));
           },);
       }
@@ -71,15 +72,41 @@ class _PetListState extends State<PetList>{
   }
 
 class DetailScreen extends StatelessWidget{
-  DetailScreen({this.petName});
-  final String petName;
+  DetailScreen({this.pet, this.index});
+  final int index;
+  final List pet;
   
   @override
   Widget build(BuildContext context){
-    print(petName);
     return Scaffold(
-      appBar: AppBar(title:Text(petName), automaticallyImplyLeading: true,) ,
-      body: Center(child: Text("hi"),)
+      appBar: AppBar(title:Text(pet[index]["fields"]["Identifier"]["stringValue"]), automaticallyImplyLeading: true,) ,
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: <Widget>[
+          Row(children: <Widget>[ 
+            Container(width: 100, height: 100, margin: EdgeInsets.fromLTRB(5.0, 3.0, 0, 0), 
+              decoration: BoxDecoration(
+                shape: BoxShape.circle, 
+                image: DecorationImage(
+                  fit: BoxFit.cover, 
+                  image: NetworkImage(
+                    pet[index]["fields"]["Photo URI"]["stringValue"]
+                  )
+                )
+              )
+            ), 
+            Container( 
+              padding: EdgeInsets.fromLTRB(16.0, 16.0, 0, 0), 
+              child:Column( 
+                children: <Widget>[ 
+                  Text(pet[index]["fields"]["Identifier"]["stringValue"], ),
+                  Text(pet[index]["fields"]["Location"][])
+                ]
+              )
+            )
+          ], 
+          )],
+      )
       );
       
   }
