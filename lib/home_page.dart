@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'auth.dart';
 import 'pets.dart';
+import 'globals.dart' as global;
 
 class HomePage extends StatefulWidget{
   HomePage({this.auth, this.onSignedOut});
@@ -35,7 +36,7 @@ class _HomePageState extends State<HomePage>{
     final _widgetOptions = [
       Text('Index 0: Detectors'),
       PetList(),
-      Text("Index 2: Settings")
+      Text(global.data.toString())
     ];
 
     return Scaffold(
@@ -51,6 +52,7 @@ class _HomePageState extends State<HomePage>{
         body: Container(
           child: _widgetOptions.elementAt(_selectedIndex)
       ),
+
       bottomNavigationBar: BottomNavigationBar(
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(icon: Icon(Icons.nfc), title: Text("Detectors") ),
