@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'auth.dart';
 import 'pets.dart';
 import 'globals.dart' as global;
+import 'package:firebase_storage/firebase_storage.dart';
+import 'package:firebase_core/firebase_core.dart';
+
 
 class HomePage extends StatefulWidget{
   HomePage({this.auth, this.onSignedOut});
@@ -33,11 +36,17 @@ class _HomePageState extends State<HomePage>{
 
   @override
   Widget build(BuildContext context){
+    final FirebaseStorage storage = FirebaseStorage(
+      storageBucket: "gs://te-cattrack.appspot.com",
+    );
+    
     final _widgetOptions = [
       Text('Index 0: Detectors'),
-      PetList(),
+      PetList(storage: storage,),
       Text(global.data.toString())
     ];
+
+    
 
     return Scaffold(
       appBar: AppBar( 

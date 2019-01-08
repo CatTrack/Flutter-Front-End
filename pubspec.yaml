@@ -15,7 +15,11 @@ environment:
 dependencies:
   http: ^0.12.0
 
+  crypto: any
+
   cloud_firestore:
+  firebase_storage: ^1.0.4
+  image_picker: ^0.4.10
   
   firebase_auth: ^0.6.6
 
